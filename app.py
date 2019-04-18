@@ -23,7 +23,7 @@ def get_people():
 @app.route('/dummy_graph')
 def get_dummy_graph():
     nodes = people + organizations
-    return_graph = {"nodes": nodes, "relationships": relationships}
+    return_graph = {"nodes": nodes, "edges": relationships}
     return jsonify(return_graph)
 
 if __name__ == '__main__':

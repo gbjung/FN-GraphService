@@ -8,7 +8,7 @@ people=[
       "person",
       "korean"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 1
   },
   {
@@ -20,7 +20,7 @@ people=[
       "person",
       "korean"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 2
   },
   {
@@ -32,7 +32,7 @@ people=[
       "person",
       "remote employee"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 3
   },
   {
@@ -45,7 +45,7 @@ people=[
       "korean",
       "remote employee"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 4
   },
   {
@@ -56,7 +56,7 @@ people=[
     "node_labels": [
       "person"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 5
   }
 ]
@@ -68,7 +68,7 @@ organizations=[
     "node_labels": [
       "organization"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 6
   },
   {
@@ -77,7 +77,7 @@ organizations=[
     "node_labels": [
       "organization"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 7
   },
   {
@@ -86,7 +86,7 @@ organizations=[
     "node_labels": [
       "organization"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 8
   },
   {
@@ -95,7 +95,7 @@ organizations=[
     "node_labels": [
       "organization"
     ],
-    "source": "FN",
+    "datasource": "FN",
     "source_id": 9
   },
 
@@ -103,8 +103,8 @@ organizations=[
 relationships=[
   {
     "id": 1,
-    "from_node": 1,
-    "to_node": 8,
+    "source": 1,
+    "target": 8,
     "type": 'Part Of',
     "meta": {
       "department": "WebApps"
@@ -112,8 +112,8 @@ relationships=[
   },
   {
     "id": 2,
-    "from_node": 2,
-    "to_node": 9,
+    "source": 2,
+    "target": 9,
     "type": 'Part Of',
     "meta": {
       "department": "Facilities"
@@ -121,8 +121,8 @@ relationships=[
   },
   {
     "id": 3,
-    "from_node": 3,
-    "to_node": 8,
+    "source": 3,
+    "target": 8,
     "type": 'Part Of',
     "meta": {
       "department": "Research"
@@ -130,8 +130,8 @@ relationships=[
   },
   {
     "id": 4,
-    "from_node": 4,
-    "to_node": 8,
+    "source": 4,
+    "target": 8,
     "type": 'Part Of',
     "meta": {
       "department": "Product"
@@ -139,8 +139,8 @@ relationships=[
   },
   {
     "id": 5,
-    "from_node": 5,
-    "to_node": 7,
+    "source": 5,
+    "target": 7,
     "type": 'Part Of',
     "meta": {
       "department": "Professional Services"
@@ -148,26 +148,26 @@ relationships=[
   },
   {
     "id": 6,
-    "from_node": 7,
-    "to_node": 6,
+    "source": 7,
+    "target": 6,
     "type": 'Department Of'
   },
   {
     "id": 7,
-    "from_node": 8,
-    "to_node": 6,
+    "source": 8,
+    "target": 6,
     "type": 'Department Of'
   },
   {
     "id": 8,
-    "from_node": 9,
-    "to_node": 6,
+    "source": 9,
+    "target": 6,
     "type": 'Department Of'
   },
   {
     "id": 9,
-    "from_node": 1,
-    "to_node": 3,
+    "source": 1,
+    "target": 3,
     "type": 'Coworkers',
     "meta": {
       "context": "Same department"
@@ -175,8 +175,8 @@ relationships=[
   },
   {
     "id": 10,
-    "from_node": 1,
-    "to_node": 4,
+    "source": 1,
+    "target": 4,
     "type": 'Coworkers',
     "meta": {
       "context": "Same department",
