@@ -1,17 +1,15 @@
 import settings
-from py2neo import Graph
+from py2neo import Graph, authenticate
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from models import Person
+from serializer import PersonSerializer
 
 app = Flask(__name__)
 
-graph = Graph(
-    host=settings.NEO4J_HOST,
-    port=settings.NEO4J_PORT,
-    user=settings.NEO4J_USER,
-    password=settings.NEO4J_PASSWORD,
-)
+authenticate(settings.NEO4J_HOST, settings.NEO4J_USER, settings.NEO4J_PASSWORD)
+graph = Graph("https://{}".format(settings.NEO4J_HOST),
+              bolt=False)
 
 @app.route("/")
 def hello_world():
@@ -19,8 +17,7 @@ def hello_world():
 
 @app.route('/people')
 def get_people():
-    people = [person for person in Person.match(graph)]
-    print(people)
+    people = [PersonSerializer(person) for person in Person.select(graph)]
     return jsonify(people)
 
 if __name__ == '__main__':

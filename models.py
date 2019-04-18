@@ -1,4 +1,4 @@
-from py2neo.ogm import GraphObject, Property, RelatedTo
+from py2neo.ogm import GraphObject, Property
 
 class Person(GraphObject):
     __primarykey__ = 'fn_id'
