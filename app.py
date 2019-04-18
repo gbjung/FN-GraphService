@@ -2,11 +2,14 @@ import settings
 from py2neo import Graph, authenticate
 
 from flask import Flask, jsonify
+from flask_cors import CORS
+
 from models import Person
 from serializer import PersonSerializer
 from dummy_data import people, organizations, relationships
 
 app = Flask(__name__)
+CORS(app)
 
 authenticate(settings.NEO4J_HOST, settings.NEO4J_USER, settings.NEO4J_PASSWORD)
 graph = Graph("https://{}".format(settings.NEO4J_HOST),
