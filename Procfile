@@ -1,1 +1,1 @@
-web: python fngraphservice/app.py
+web: gunicorn app:app
