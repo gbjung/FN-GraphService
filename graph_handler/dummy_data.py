@@ -105,7 +105,7 @@ relationships=[
     "id": 1,
     "source": 1,
     "target": 8,
-    "type": 'Part Of',
+    "label": 'Part Of',
     "meta": {
       "department": "WebApps"
     }
@@ -114,7 +114,7 @@ relationships=[
     "id": 2,
     "source": 2,
     "target": 9,
-    "type": 'Part Of',
+    "label": 'Part Of',
     "meta": {
       "department": "Facilities"
     }
@@ -123,7 +123,7 @@ relationships=[
     "id": 3,
     "source": 3,
     "target": 8,
-    "type": 'Part Of',
+    "label": 'Part Of',
     "meta": {
       "department": "Research"
     }
@@ -132,7 +132,7 @@ relationships=[
     "id": 4,
     "source": 4,
     "target": 8,
-    "type": 'Part Of',
+    "label": 'Part Of',
     "meta": {
       "department": "Product"
     }
@@ -141,7 +141,7 @@ relationships=[
     "id": 5,
     "source": 5,
     "target": 7,
-    "type": 'Part Of',
+    "label": 'Part Of',
     "meta": {
       "department": "Professional Services"
     }
@@ -150,25 +150,25 @@ relationships=[
     "id": 6,
     "source": 7,
     "target": 6,
-    "type": 'Department Of'
+    "label": 'Department Of'
   },
   {
     "id": 7,
     "source": 8,
     "target": 6,
-    "type": 'Department Of'
+    "label": 'Department Of'
   },
   {
     "id": 8,
     "source": 9,
     "target": 6,
-    "type": 'Department Of'
+    "label": 'Department Of'
   },
   {
     "id": 9,
     "source": 1,
     "target": 3,
-    "type": 'Coworkers',
+    "label": 'Coworkers',
     "meta": {
       "context": "Same department"
     }
@@ -177,7 +177,7 @@ relationships=[
     "id": 10,
     "source": 1,
     "target": 4,
-    "type": 'Coworkers',
+    "label": 'Coworkers',
     "meta": {
       "context": "Same department",
       "squad": "Stakeholders"
