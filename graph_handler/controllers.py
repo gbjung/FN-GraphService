@@ -25,12 +25,10 @@ def real_graph():
     query = "match (a)-[r]-(b) return a, type(r), r, b"
     results = graph.run(query).data()
     for result in results:
-        print(result)
         source = dict(result['a'])
         target = dict(result['b'])
         label = result['type(r)']
         relationship_meta = dict(result['r'])
-        print(relationship_meta)
         relationship_id = relationship_meta.pop('id')
 
         if source['id'] not in node_ids:
