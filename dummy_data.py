@@ -3,7 +3,7 @@ people=[
     "first_name": "Gyeongbae",
     "id": 1,
     "last_name": "Jung",
-    "full_name": "Gyeongbae Jung",
+    "label": "Gyeongbae Jung",
     "node_labels": [
       "person",
       "korean"
@@ -15,7 +15,7 @@ people=[
     "first_name": "Kat",
     "id": 2,
     "last_name": "Hong",
-    "full_name": "Kat Hong",
+    "label": "Kat Hong",
     "node_labels": [
       "person",
       "korean"
@@ -27,7 +27,7 @@ people=[
     "first_name": "Marly",
     "id": 3,
     "last_name": "Jones",
-    "full_name": "Marly Jones",
+    "label": "Marly Jones",
     "node_labels": [
       "person",
       "remote employee"
@@ -39,7 +39,7 @@ people=[
     "first_name": "Joe",
     "id": 4,
     "last_name": "Pak",
-    "full_name": "Joe Park",
+    "label": "Joe Park",
     "node_labels": [
       "person",
       "korean",
@@ -52,7 +52,7 @@ people=[
     "first_name": "Tiffany",
     "id": 5,
     "last_name": "Keung",
-    "full_name": "Tiffany Keung",
+    "label": "Tiffany Keung",
     "node_labels": [
       "person"
     ],
@@ -64,7 +64,7 @@ people=[
 organizations=[
   {
     "id": 6,
-    "full_name": "FiscalNote",
+    "label": "FiscalNote",
     "node_labels": [
       "organization"
     ],
@@ -73,7 +73,7 @@ organizations=[
   },
   {
     "id": 7,
-    "full_name": "Business Development",
+    "label": "Business Development",
     "node_labels": [
       "organization"
     ],
@@ -82,7 +82,7 @@ organizations=[
   },
   {
     "id": 8,
-    "full_name": "Research & Development",
+    "label": "Research & Development",
     "node_labels": [
       "organization"
     ],
@@ -91,7 +91,7 @@ organizations=[
   },
   {
     "id": 9,
-    "full_name": "Operations",
+    "label": "Operations",
     "node_labels": [
       "organization"
     ],
